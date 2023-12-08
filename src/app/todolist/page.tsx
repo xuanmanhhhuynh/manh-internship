@@ -1,9 +1,9 @@
-import TodoList from "@/modules/todoist/components";
+import TodoApp from "@/modules/todoApp/page";
 
-export default function TodoListPage() {
+export default function TodoAppPage() {
   return (
-    <main>
-      <TodoList />
-    </main>
+    <div>
+      <TodoApp />
+    </div>
   );
 }

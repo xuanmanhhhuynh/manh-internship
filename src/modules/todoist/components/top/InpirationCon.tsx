@@ -9,19 +9,19 @@ type TodoListEntity = {
   description?: string;
 };
 
-const Mid = () => {
+const InpirationCon = () => {
   const todolist: TodoListEntity[] = [
     {
       id: 1,
-      title: "Ngày 1",
+      title: "Explo todoList",
     },
     {
       id: 2,
-      title: "Ngày 2 ",
+      title: " I'm happy today",
     },
     {
       id: 3,
-      title: "Ngày 3 ",
+      title: "Today I'm very focused ",
     },
   ];
 
@@ -49,26 +49,8 @@ const Mid = () => {
           <h1>{item.title}</h1>
         </li>
       ))}
-
-      <li className="flex items-center space-x-4 mt-4">
-        <span
-          className="icon_add hover:cursor-pointer hover:bg-red-600 hover:text-white rounded-full"
-          aria-hidden="true"
-        >
-          <svg width="13" height="13">
-            <path
-              fill="currentColor"
-              fillRule="evenodd"
-              d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
-            ></path>
-          </svg>
-        </span>
-        <span className="ml-2 text-gray-500 hover:text-red-600 hover:cursor-pointer">
-          Add task
-        </span>
-      </li>
     </ul>
   );
 };
 
-export default Mid;
+export default InpirationCon;

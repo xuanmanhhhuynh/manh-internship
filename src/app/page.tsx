@@ -9,6 +9,7 @@ export default function Home() {
       <Link href={ROUTES.ABOUT}>about</Link>
       <Link href={ROUTES.CONTACT}>contact</Link>
       <Link href={ROUTES.TODOLIST}>todolist</Link>
+      <p className="text-sky-700">Test</p>
     </main>
   );
 }
