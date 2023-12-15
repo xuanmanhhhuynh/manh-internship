@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import InpirationCon from "./InpirationCon";
-
+import mg2 from "@/../../public/mg2.svg";
+import Image from "next/image";
 const Inpiration = () => {
   const [isMidVisible, setIsMidVisible] = useState(false);
 
@@ -17,8 +18,9 @@ const Inpiration = () => {
             <path fill="none" stroke="currentColor" d="m16 10-4 4-4-4"></path>
           </svg>
         </div>
-        <h1 className="text-black font-semibold font-weight: 600 flex-grow">
+        <h1 className="text-black font-semibold font-weight: 600 flex flex-grow">
           Inspiration
+          <Image src={mg2} width={30} style={{ paddingLeft: "5px" }}></Image>
         </h1>
         <div className="ml-auto flex items-center">
           <div>

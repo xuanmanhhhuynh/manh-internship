@@ -6,6 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         "white-4": "rgba(250,248,247)",
+        black666: "rgb(102, 102, 102)",
       },
     },
   },

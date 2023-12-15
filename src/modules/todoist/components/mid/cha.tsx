@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Mid from "./task";
+import mg1 from "@/../../public/mg1.svg";
+import Image from "next/image";
 const Cha = () => {
   const [isMidVisible, setIsMidVisible] = useState(false);
 
@@ -16,8 +18,9 @@ const Cha = () => {
             <path fill="none" stroke="currentColor" d="m16 10-4 4-4-4"></path>
           </svg>
         </div>
-        <h1 className="text-black font-semibold font-weight: 600 flex-grow">
+        <h1 className="text-black font-semibold font-weight: 600 flex flex-grow">
           Nhiệm vụ
+          <Image src={mg1} width={30} style={{ paddingLeft: "5px" }}></Image>
         </h1>
         <div className="ml-auto flex items-center">
           <div>

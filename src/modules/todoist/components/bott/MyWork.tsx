@@ -1,13 +1,32 @@
 "use client";
+import test from "@/../../public/test.svg";
 import { useState } from "react";
 import MyWorkCon from "./MyworkCon";
+import { TodoListEntity } from "../../types";
+import Image from "next/image";
 
 const MyWork = () => {
+  const todolist: TodoListEntity[] = [
+    {
+      id: 1,
+      title: "Connect to my Work todolist",
+    },
+    {
+      id: 2,
+      title: "Goodmorning ",
+    },
+    {
+      id: 3,
+      title: "You remmember for work yesterday ",
+    },
+  ];
+
   return (
     <div className="pb-20">
       <div className="flex items-center border-b py-1.5 border-b-gray-100">
-        <h1 className="text-black font-semibold font-weight: 600 flex-grow text-xl">
+        <h1 className="text-black font-semibold font-weight: 600 flex flex-grow text-xl">
           My Work
+          <Image src={test} width={30} style={{ paddingLeft: "5px" }}></Image>
         </h1>
         <div className="ml-auto flex items-center">
           <div>
@@ -71,7 +90,7 @@ const MyWork = () => {
         </div>
       </div>
       <div>
-        <MyWorkCon />
+        <MyWorkCon data={todolist} />
       </div>
     </div>
   );
