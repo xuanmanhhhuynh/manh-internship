@@ -1,20 +1,13 @@
-"use client";
-import React, { use, useState } from "react";
+'use client';
+
+import React from 'react';
 
 const Header = () => {
-  const [open, setOpen] = useState(true);
-
   return (
     <div className="flex justify-between">
       <div className="flex">
-        <img src="" alt="" />
         <p>piece</p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          aria-hidden="true"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
           <path
             fill="none"
             fill-rule="evenodd"
@@ -26,13 +19,7 @@ const Header = () => {
         </svg>
       </div>
       <div className="flex ">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             fill-rule="evenodd"
@@ -40,15 +27,8 @@ const Header = () => {
             clip-rule="evenodd"
           ></path>
         </svg>
-        <div className={!open ? "bg-purple-300 " : ""}>
-          <svg
-            onClick={() => setOpen(!open)}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
+        <div className={!open ? 'bg-purple-300 ' : ''}>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path
               fill="currentColor"
               fill-rule="evenodd"

@@ -1,24 +1,26 @@
-"use client";
-import test from "@/../../public/test.svg";
-import { useState } from "react";
-import MyWorkCon from "./MyworkCon";
-import { TodoListEntity } from "../../types";
-import Image from "next/image";
+'use client';
+
+import Image from 'next/image';
+import test from '@/../../public/test.svg';
+
+import { TodoListEntity } from '../../types';
+
+import MyWorkCon from './MyworkCon';
 
 const MyWork = () => {
   const todolist: TodoListEntity[] = [
     {
       id: 1,
-      title: "Connect to my Work todolist",
+      title: 'Connect to my Work todolist'
     },
     {
       id: 2,
-      title: "Goodmorning ",
+      title: 'Goodmorning '
     },
     {
       id: 3,
-      title: "You remmember for work yesterday ",
-    },
+      title: 'You remmember for work yesterday '
+    }
   ];
 
   return (
@@ -26,17 +28,11 @@ const MyWork = () => {
       <div className="flex items-center border-b py-1.5 border-b-gray-100">
         <h1 className="text-black font-semibold font-weight: 600 flex flex-grow text-xl">
           My Work
-          <Image src={test} width={30} style={{ paddingLeft: "5px" }}></Image>
+          <Image src={test} width={30} style={{ paddingLeft: '5px' }} alt={''} />
         </h1>
         <div className="ml-auto flex items-center">
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 fill-rule="evenodd"
@@ -46,12 +42,7 @@ const MyWork = () => {
             </svg>
           </div>
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 fill-rule="nonzero"
@@ -60,12 +51,7 @@ const MyWork = () => {
             </svg>
           </div>
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              data-svgs-path="sm1/comments.svg"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" data-svgs-path="sm1/comments.svg">
               <path
                 fill="currentColor"
                 fill-rule="nonzero"
@@ -75,12 +61,7 @@ const MyWork = () => {
           </div>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-              <g
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                transform="translate(3 10)"
-              >
+              <g fill="none" stroke="currentColor" stroke-linecap="round" transform="translate(3 10)">
                 <circle cx="2" cy="2" r="2"></circle>
                 <circle cx="9" cy="2" r="2"></circle>
                 <circle cx="16" cy="2" r="2"></circle>

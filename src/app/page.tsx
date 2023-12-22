@@ -1,6 +1,5 @@
-import { ROUTES } from "@/common/contants/routes";
-import Image from "next/image";
-import Link from "next/link";
+import Link from 'next/link';
+import { ROUTES } from '@/common/contants/routes';
 
 export default function Home() {
   return (

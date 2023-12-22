@@ -1,13 +1,11 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 
-interface ButtonProps {
+interface IButtonProps {
   children: ReactNode;
 }
 
-function Button({ children }: ButtonProps) {
-  return (
-    <button className="w-full text-left pl-3 py-3 flex">{children}</button>
-  );
+function Button({ children }: IButtonProps) {
+  return <button className="w-full text-left pl-3 py-3 flex">{children}</button>;
 }
 
 export default Button;

@@ -1,7 +1,7 @@
-"use client";
-import axios from "axios";
+'use client';
 
-import { useEffect } from "react";
+import { useEffect } from 'react';
+import axios from 'axios';
 
 type TodoListEntity = {
   id: number;
@@ -9,42 +9,39 @@ type TodoListEntity = {
   description?: string;
 };
 
-const InpirationCon = () => {
+const InspirationCon = () => {
   const todolist: TodoListEntity[] = [
     {
       id: 1,
-      title: "Explo todoList",
+      title: 'Explo todoList'
     },
     {
       id: 2,
-      title: " I'm happy today",
+      title: " I'm happy today"
     },
     {
       id: 3,
-      title: "Today I'm very focused ",
-    },
+      title: "Today I'm very focused "
+    }
   ];
 
   useEffect(() => {
     axios({
-      method: "get",
-      url: "http://localhost:3100/posts",
+      method: 'get',
+      url: 'http://localhost:3100/posts'
     })
-      .then((response) => {
-        console.log(response.data);
+      .then(_response => {
+        // console.log(response.data);
       })
-      .catch((error) => {
-        console.error(error);
+      .catch(_error => {
+        // console.error(error);
       });
   }, []);
 
   return (
     <ul>
       {todolist.map((item, index) => (
-        <li
-          key={index}
-          className="flex items-center space-x-4 border-b py-1.5 border-b-gray-100"
-        >
+        <li key={index} className="flex items-center space-x-4 border-b py-1.5 border-b-gray-100">
           <input type="radio" id={`radio_${index}`} name="boss" />
           <h1>{item.title}</h1>
         </li>
@@ -62,12 +59,10 @@ const InpirationCon = () => {
             ></path>
           </svg>
         </span>
-        <span className="ml-2 text-gray-500 hover:text-red-600 hover:cursor-pointer">
-          Add task
-        </span>
+        <span className="ml-2 text-gray-500 hover:text-red-600 hover:cursor-pointer">Add task</span>
       </li>
     </ul>
   );
 };
 
-export default InpirationCon;
+export default InspirationCon;

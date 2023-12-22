@@ -1,0 +1,15 @@
+node_modules
+.next
+.vscode
+public
+patches
+coverage
+unit-coverage
+unit-results
+e2e-coverage
+e2e-results
+src/core-ui
+src/libs/abc-icons
+src/libs/abc-icons/dist
+next-env.d.ts
+yarn.lock

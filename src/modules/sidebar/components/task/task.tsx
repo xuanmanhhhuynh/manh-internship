@@ -1,17 +1,12 @@
-import React from "react";
-import Button from "./button";
+import React from 'react';
+
+import Button from './button';
 
 function Task() {
   return (
     <div className="flex flex-col items-start ">
       <Button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             fill-rule="evenodd"
@@ -22,13 +17,7 @@ function Task() {
         <p>Add Task</p>
       </Button>
       <Button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             fill-rule="evenodd"
@@ -39,14 +28,7 @@ function Task() {
         <p>Search</p>
       </Button>
       <Button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="D0nCgYmq4STarYo9rnCpwQAAO8riDGKd"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             fill-rule="evenodd"
@@ -57,12 +39,7 @@ function Task() {
         <p>Inbox</p>
       </Button>
       <Button>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="_e4xuqk0xH3hSafdbSW2Qhx_p72jg19o"
-        >
+        <svg width="24" height="24" viewBox="0 0 24 24">
           <g fill="currentColor" fill-rule="evenodd">
             <path
               fill-rule="nonzero"
@@ -74,13 +51,7 @@ function Task() {
               transform="translate(4 2)"
               font-weight="500"
             >
-              <tspan
-                x="8"
-                y="15"
-                text-anchor="middle"
-                _mstTextHash="10192"
-                _mstHash="1094"
-              >
+              <tspan x="8" y="15" text-anchor="middle">
                 08
               </tspan>
             </text>
@@ -89,14 +60,7 @@ function Task() {
         <p>Today</p>
       </Button>
       <Button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="R7GJRAgqX85M4uldYGrsUgwgfQYp8IrP"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             fill-rule="evenodd"
@@ -107,14 +71,7 @@ function Task() {
         <p>Upcoming</p>
       </Button>
       <Button>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="NAFqZpweVv2qW6PZaB6UegeDrhQeAToS"
-        >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             fill-rule="evenodd"

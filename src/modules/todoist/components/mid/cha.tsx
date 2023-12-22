@@ -1,8 +1,11 @@
-"use client";
-import { useState } from "react";
-import Mid from "./task";
-import mg1 from "@/../../public/mg1.svg";
-import Image from "next/image";
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+import mg1 from '@/../../public/mg1.svg';
+
+import Mid from './task';
+
 const Cha = () => {
   const [isMidVisible, setIsMidVisible] = useState(false);
 
@@ -20,17 +23,12 @@ const Cha = () => {
         </div>
         <h1 className="text-black font-semibold font-weight: 600 flex flex-grow">
           Nhiệm vụ
-          <Image src={mg1} width={30} style={{ paddingLeft: "5px" }}></Image>
+          <Image src={mg1} width={30} style={{ paddingLeft: '5px' }} alt={''} />
         </h1>
         <div className="ml-auto flex items-center">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-              <g
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                transform="translate(3 10)"
-              >
+              <g fill="none" stroke="currentColor" stroke-linecap="round" transform="translate(3 10)">
                 <circle cx="2" cy="2" r="2"></circle>
                 <circle cx="9" cy="2" r="2"></circle>
                 <circle cx="16" cy="2" r="2"></circle>
@@ -39,7 +37,7 @@ const Cha = () => {
           </div>
         </div>
       </div>
-      <div className={isMidVisible ? "block" : "hidden"}>
+      <div className={isMidVisible ? 'block' : 'hidden'}>
         <Mid />
       </div>
     </div>

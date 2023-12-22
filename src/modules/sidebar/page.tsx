@@ -1,7 +1,8 @@
-import React from "react";
-import Header from "./components/navbar/header";
-import Task from "./components/task/task";
-import Myprojectcha from "./components/project/Myprojectcha";
+import React from 'react';
+
+import Header from './components/navbar/header';
+import Myprojectcha from './components/project/Myprojectcha';
+import Task from './components/task/task';
 
 function Sidebar() {
   return (

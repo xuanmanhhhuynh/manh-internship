@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import TodoList from "../todoist/components";
-import Sidebar from "../sidebar/page";
+import React from 'react';
+
+import Sidebar from '../sidebar/page';
+import TodoList from '../todoist/components';
 
 function TodoApp() {
   return (
